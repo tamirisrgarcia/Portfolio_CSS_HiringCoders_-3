@@ -30,11 +30,11 @@ header ul li {
     /* border-right: 1px dashed #ccc; */
 }
 
-header ul li a {
+header ul li a i{
     transition: 250ms;
 }
 
-header ul li a:hover {
+header ul li a i:hover {
     color:#dd2f86;
     cursor: pointer;
 }
@@ -64,22 +64,23 @@ header div img {
 }
 
 #about {
-    background-color:#dd2f865c;
+    background-color:#e7dbe188;
     border-radius: 2em;
     margin: 4em;
 }
 
 #about h3 {
-    font-size: 26px;
+    font-size: 28px;
+    font-style: italic;
     padding-top: 1em;
-    color: #fff;
+    color: rgb(66, 221, 110);
 }
 
 #about p {
     width: 100%;
     padding: 1em;
     font-size: 22px;
-    color: #fff;
+    color: rgb(49, 49, 49);
 }
 
 @keyframes blink {
