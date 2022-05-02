@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #A8359C;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(./img/pexels-photo-633409.webp) center center fixed no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 1px 1px 10px 1px #ccc;
+    margin-bottom: 8em;
+    /* border-bottom: 15px ridge #ccc; */
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 1em;
+    /* border-right: 1px dashed #ccc; */
+}
+
+header ul li a {
+    transition: 250ms;
+}
+
+header ul li a:hover {
+    color:#dd2f86;
+    cursor: pointer;
+}
+
+header div img {
+    width: 90px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+    margin-bottom: 0.2em;
+}
+
+.container .name h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 0.4em;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#about {
+    background-color:#dd2f865c;
+    border-radius: 2em;
+    margin: 4em;
+}
+
+#about h3 {
+    font-size: 26px;
+    padding-top: 1em;
+    color: #fff;
+}
+
+#about p {
+    width: 100%;
+    padding: 1em;
+    font-size: 22px;
+    color: #fff;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+    color:#dd2f86;
+    animation: blink 1.5s steps(5, start) infinite;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #E18CD9;
+}
+
+.form {
+    width: 65vh;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.form div p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.form input {
+    width: 60%;
+    border: none;
+    border-radius: 0.5em 0 0 0.5em;
+    height: 2.3em;
+    padding: 5px 10px;
+    margin-top: 2em;
+}
+
+.form button {
+    width: 20%;
+    height: 2.3em;
+    background: linear-gradient(to right, rgb(144, 52, 231) 50%, rgb(96, 132, 230) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 250ms ease-out;
+    border-radius: 0 0.5em 0.5em 0;
+    margin-left: -5px;
+    margin-top: 1.2em;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 45px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    
+}
